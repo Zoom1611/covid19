@@ -31,8 +31,8 @@
       </div>
     </el-col>
   </el-row>
-  <div class="mainContent row">
-    <el-row>
+  <div class="mainContent">
+    <div class="mainContent">
       <div style="flex: auto" class="search">
         <el-select-v2
           v-model="selectedCountry"
@@ -77,7 +77,7 @@
         </el-pagination>
       </div>
       <div class="noDataMessage">{{ noDataMessage }}</div>
-    </el-row>
+    </div>
   </div>
 </template>
 
