@@ -21,7 +21,7 @@ npm run build
 ### URL of the web page
 
 ```
-
+https://zoom-covid19.netlify.app/
 ```
 
 ### Application description
