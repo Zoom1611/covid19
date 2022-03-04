@@ -32,7 +32,7 @@
     </el-col>
   </el-row>
   <div class="mainContent">
-    <div class="mainContent">
+    <div class="tabelAlignCenter">
       <div style="flex: auto" class="search">
         <el-select-v2
           v-model="selectedCountry"
@@ -49,21 +49,21 @@
       <div class="tabel">
         <el-table
           :data="data"
-          style="width: 50%; border: 1px solid #f1f1f1; border-radius: 8px"
+          style="border: 1px solid #f1f1f1; border-radius: 8px"
           v-if="!tabelReload"
         >
           <el-table-column prop="Country" label="Country" width="220" />
           <el-table-column
             prop="TotalConfirmed"
             label="Confirmed"
-            width="180"
+            width="200"
           />
           <el-table-column
             prop="TotalRecovered"
             label="Recovered"
-            width="180"
+            width="200"
           />
-          <el-table-column prop="TotalDeaths" label="Deaths" />
+          <el-table-column prop="TotalDeaths" label="Deaths" width="120" />
         </el-table>
       </div>
       <div class="pagination">
@@ -206,7 +206,7 @@ export default {
   border: 1px solid #f1f1f1;
   border-radius: 8px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 65px;
 }
 .summaryNumbersDesign {
   font-size: 30px;
@@ -258,5 +258,13 @@ export default {
 }
 .el-row {
   justify-content: space-evenly;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+}
+.tabelAlignCenter {
+  align-self: center;
 }
 </style>
